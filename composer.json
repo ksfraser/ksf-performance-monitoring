@@ -1,0 +1,34 @@
+{
+    "name": "ksfraser/ksf-performance-monitoring",
+    "description": "Performance benchmarking and real-time monitoring framework with latency analysis, load testing, and operational metrics collection",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.0",
+    "homepage": "https://github.com/ksfraser/ksf-performance-monitoring",
+    "authors": [
+        {
+            "name": "KSF Development Team",
+            "email": "dev@ksfraser.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ksfraser\\Performance\\": "src/Ksfraser/Performance/",
+            "Ksfraser\\Monitoring\\": "src/Ksfraser/Monitoring/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --configuration phpunit.xml"
+    }
+}
